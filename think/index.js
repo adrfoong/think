@@ -23,7 +23,9 @@ exports.handler = async function(event, context) {
       "Content-Type": "application/json",
       "Access-Control-Allow-Origin": "*"
     },
-    body: JSON.parse({ position: state.cells.findIndex(cell => !cell.mark) })
+    body: JSON.stringify({
+      position: state.cells.findIndex(cell => !cell.mark)
+    })
   };
 
   return response;
