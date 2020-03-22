@@ -24,7 +24,7 @@ exports.handler = async function(event, context) {
       "Access-Control-Allow-Origin": "*"
     },
     body: JSON.stringify({
-      position: state.cells.findIndex(cell => !cell.mark)
+      position: state.cells.findIndex(cell => !cell.playerId)
     })
   };
 
