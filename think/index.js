@@ -16,7 +16,7 @@
 
 exports.handler = async function(event, context) {
   const state = event.body;
-  console.log(event);
+  //   console.log(event);
   console.log(event.body);
 
   const response = {
