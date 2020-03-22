@@ -18,7 +18,7 @@ exports.handler = async function(event, context) {
   const state = JSON.parse(event.body);
 
   const response = {
-    statusCode: "200",
+    statusCode: 200,
     headers: {
       "Content-Type": "application/json",
       "Access-Control-Allow-Origin": "*"
