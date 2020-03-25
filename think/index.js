@@ -16,6 +16,8 @@
 
 exports.handler = async function(event, context) {
   const state = JSON.parse(event.body);
+  console.log(state.cells.map(c => c.playerId));
+  console.log(state.cells.findIndex(cell => !cell.playerId));
 
   const response = {
     statusCode: 200,
